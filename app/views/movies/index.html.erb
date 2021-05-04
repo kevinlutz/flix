@@ -3,11 +3,10 @@
     <li>
         <strong><%= movie.title %></strong>
         (<%= movie.rating %>):
-        <%= number_to_currency(movie.total_gross, precision: 0) %>
+        <%= total_gross(movie) %>
         <p><%= movie.description%></p>
-        <p><%= movie.released_on%></p>
-        <p><%= price(event)%></p>
-        <p><%= show(event)%> </p>
+        <p><%= year_of(movie)%></p>
+        <p><%= price(movie)%></p>
     </li>
 <% end %>
 </ul>
