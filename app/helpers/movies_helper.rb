@@ -23,5 +23,8 @@ module MoviesHelper
         end
     end
 
+    def description(movie)
+        truncate(movie.description, length: 60, separator: ' ')
+    end
     
 end

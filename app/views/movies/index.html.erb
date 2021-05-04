@@ -1,12 +1,11 @@
 <ul>
 <% @movies.each do |movie| %>
     <li>
-        <strong><%= movie.title %></strong>
-        (<%= movie.rating %>):
-        <%= total_gross(movie) %>
-        <p><%= movie.description%></p>
+        <strong><%= movie.title %></strong>(<%= movie.rating %>):
+        <p><%= description(movie)%></p>
         <p><%= year_of(movie)%></p>
         <p><%= price(movie)%></p>
+        <p><%= total_gross(movie)%></p>
     </li>
 <% end %>
 </ul>
