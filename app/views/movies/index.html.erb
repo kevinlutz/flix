@@ -3,10 +3,10 @@
   <section class="movie">
     <div class="summary">
       <h2>
-        <%= movie.title %>
+        <u><%= movie.title %> </u>
       </h2>
       <h3>
-        <%= total_gross(movie) %>
+        <h6>Box Office Total: <%= total_gross(movie) %> </h6> 
       </h3>
       <p>
         <%= truncate(movie.description, length: 150, separator: ' ') %>
