@@ -1,7 +1,7 @@
 class Movie < ApplicationRecord
 
     def free?
-        price.zero? || price.blank?
+        total_gross.zero? || total_gross.blank?
     end
 
     def showtime
@@ -9,7 +9,7 @@ class Movie < ApplicationRecord
     end
 
     def flop?
-        total_gross.blank? || total_gross < 225_000_000
+        total_gross.blank? || total_gross < 25_000_000
     end
 
 
