@@ -3,7 +3,7 @@
 <%= form_with(model: @movie, local: true) do |f| %>
 
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, autofocus: true%>
 
   <%= f.label :description %>
   <%= f.text_area :description, rows: 7 %>
@@ -18,5 +18,5 @@
   <%= f.number_field :total_gross %>
 
   <%= f.submit %>
-  
+
 <% end %>
