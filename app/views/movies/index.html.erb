@@ -6,7 +6,7 @@
         <u><%= link_to(movie.title, movie_path(movie)) %> </u>
       </h2>
       <h3>
-        <h6>Box Office Total: <%= total_gross(movie) %> </h6> 
+        <h6>Box Office Revenue: <%= total_gross(movie) %> </h6> 
       </h3>
       <p>
         <%= truncate(movie.description, length: 175, separator: ' ') %>
